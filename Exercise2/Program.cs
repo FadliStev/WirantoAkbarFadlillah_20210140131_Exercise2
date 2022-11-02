@@ -23,6 +23,23 @@ namespace Exercise2
                 else
                     Console.WriteLine("\n Element yang diamsukkan tidak bisa lebih dari 24");
             }
+            Console.WriteLine("");
+            Console.WriteLine("========================");    
+            Console.WriteLine(" Masukkan Element Array ");
+            Console.WriteLine("========================");
+
+            for(int i=0; i < n; i++)//funtion untuk display array
+            {
+                Console.WriteLine("<"+ (i+1)+">");
+                string s1 = Console.ReadLine(); 
+                fad[i] = Int32.Parse(s1);
+            }
+
+        }
+
+        public void display()
+        {
+
         }
         static void Main(string[] args)
         {
