@@ -67,6 +67,11 @@ namespace Exercise2
         }
         static void Main(string[] args)
         {
+            Program exercise = new Program();
+            exercise.read();
+            exercise.algorithm();
+            exercise.display();
+            Console.Read();
         }
     }
 }
