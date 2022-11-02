@@ -53,16 +53,38 @@ namespace Exercise2
 
         public void algorithm()
         {
-            for (int i = 1; i<n; i++)//funtion untuk logika pada algorithm
+            for (int i = 1; i < n; i++)//funtion untuk logika pada algorithm
             {
                 int temp = fad[i];
-                int j = i-1;
-                while(j>0 && fad[j] > temp)
+                int j = i  -1;
+                while(j>=0 && fad[j] > temp)
                 {
                     fad[j + 1] = fad[j];
                     j--;
                 }
                     fad[j+1] = temp;
+            }
+        }
+
+        public void algorithm2()
+        {
+            
+            int high = n - 1;//variabel untuk high
+            int low = 0;//variabel untuk low
+            int mid = (low + high) / 2;//variabel untuk mid
+           
+
+            int i = low;//variabel untuk i
+            int j = mid + 1;//variabel untuk j
+            int k = low;//variabel untuk k
+            if (fad[i]<=fad[j])//function untuk array[i] <= array[j]
+            {
+
+                fad[i] = k;
+                i++;
+                j++;
+                k++;
+
             }
         }
         static void Main(string[] args)
