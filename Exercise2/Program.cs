@@ -50,6 +50,21 @@ namespace Exercise2
             }
             Console.WriteLine("");
         }
+
+        public void algorithm()
+        {
+            for (int i = 1; i<n; i++)//funtion untuk logika pada algorithm
+            {
+                int temp = fad[i];
+                int j = i-1;
+                while(j>0 && fad[j] > temp)
+                {
+                    fad[j + 1] = fad[j];
+                    j--;
+                }
+                    fad[j+1] = temp;
+            }
+        }
         static void Main(string[] args)
         {
         }
