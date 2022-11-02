@@ -121,8 +121,22 @@ namespace Exercise2
                     exercise.algorithm();
                     exercise.display();
                     break;
+                case 2:
+                    Console.WriteLine("");
+                    Console.WriteLine("++++++++++++");
+                    Console.WriteLine("Algoritma 2");
+                    Console.WriteLine("+++++++++++");
+                    exercise.algorithm2();
+                    exercise.display();
+                    break;
+                case 3:
+                    Console.WriteLine("Exit");
+                    break;
+                default:
+                    Console.WriteLine("Error");
+                    break;
             }
-            
+            Console.ReadLine();
         }
     }
 }
