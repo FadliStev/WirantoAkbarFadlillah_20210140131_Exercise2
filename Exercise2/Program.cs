@@ -102,10 +102,27 @@ namespace Exercise2
         static void Main(string[] args)
         {
             Program exercise = new Program();
+            
+            int pilih;
             exercise.read();
-            exercise.algorithm();
-            exercise.display();
-            Console.Read();
+            Console.WriteLine("Menu Algoritma: ");
+            Console.WriteLine("================");
+            Console.WriteLine("1.Algoritma 1");
+            Console.WriteLine("2.Algoritma 2");
+            Console.WriteLine("Pilihlah Algortima Untuk Menyusun Array (1,2) : ");
+            pilih = Convert.ToInt32(Console.ReadLine());
+            switch (pilih)//menambahkan function switch untuk memilih algoritma
+            {
+                case 1:
+                    Console.WriteLine("");
+                    Console.WriteLine("++++++++++++");
+                    Console.WriteLine("Algoritma 1");
+                    Console.WriteLine("+++++++++++");
+                    exercise.algorithm();
+                    exercise.display();
+                    break;
+            }
+            
         }
     }
 }
