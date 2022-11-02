@@ -39,7 +39,16 @@ namespace Exercise2
 
         public void display()
         {
-
+            //Menampilkan array yang telah tersusun
+            Console.WriteLine("");
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine(" Element Array Telah Tersusun ");
+            Console.WriteLine("-----------------------------");
+            for (int j =0; j <n; j++)
+            {
+                Console.WriteLine(fad[j]);
+            }
+            Console.WriteLine("");
         }
         static void Main(string[] args)
         {
