@@ -86,6 +86,18 @@ namespace Exercise2
                 k++;
 
             }
+            if (j > high)
+            {
+                fad[j] = k;
+                j++;
+                k++;
+            }
+            if (i > mid)
+            {
+                fad[i] = k;
+                i++;
+                k++;
+            }
         }
         static void Main(string[] args)
         {
